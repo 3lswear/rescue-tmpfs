@@ -2,6 +2,10 @@
 OUT_DIR=/media/linux_data/data/rescued
 BAK_DIR=$(date +%F' '%R)
 DIR="$OUT_DIR"/"$BAK_DIR"
-echo $DIR
 mkdir "$DIR"
-cp -pru /dev/shm/* "$DIR"
+if [ "$(ls -A $DIR)" ]
+then
+	cp -pru /dev/shm/* "$DIR"
+else
+	echo "directory empty"
+fi
