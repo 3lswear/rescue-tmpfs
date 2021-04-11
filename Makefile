@@ -1,4 +1,4 @@
-SYSTEMD_DIR=~/.config/systemd/
+SYSTEMD_DIR=~/.config/systemd/user/
 USER_PATH=~/.local/bin/
 
 NAME=rescue-devshm
