@@ -1,0 +1,11 @@
+[Unit]
+Description=Save files left in /dev/shm to disk
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/bin/true
+ExecStop=/usr/bin/env rescue-devshm.sh
+
+[Install]
+WantedBy=multi-user.target
