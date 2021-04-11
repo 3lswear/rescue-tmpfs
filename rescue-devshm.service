@@ -8,4 +8,4 @@ ExecStart=/bin/true
 ExecStop=/usr/bin/env rescue-devshm.sh
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=multi-user.target reboot.target shutdown.target halt.target
